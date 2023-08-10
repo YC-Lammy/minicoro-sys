@@ -1,0 +1,46 @@
+TARGET = Some("x86_64-pc-windows-gnu")
+HOST = Some("x86_64-pc-windows-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-gnu
+CC_x86_64-pc-windows-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_gnu
+CC_x86_64_pc_windows_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-gnu
+CFLAGS_x86_64-pc-windows-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_gnu
+CFLAGS_x86_64_pc_windows_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: "gcc.exe" "-O3" "-ffunction-sections" "-fdata-sections" "-gdwarf-2" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-o" "C:\\Users\\YC\\Documents\\github\\rusty-ts\\minicoro-sys\\target\\debug\\build\\minicoro-sys-3f599aa2a0635f00\\out\\minicoro.o" "-c" "minicoro.h"
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-gnu
+AR_x86_64-pc-windows-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_gnu
+AR_x86_64_pc_windows_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-gnu
+ARFLAGS_x86_64-pc-windows-gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_gnu
+ARFLAGS_x86_64_pc_windows_gnu = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: "ar" "cq" "C:\\Users\\YC\\Documents\\github\\rusty-ts\\minicoro-sys\\target\\debug\\build\\minicoro-sys-3f599aa2a0635f00\\out\\libminicoro.a" "C:\\Users\\YC\\Documents\\github\\rusty-ts\\minicoro-sys\\target\\debug\\build\\minicoro-sys-3f599aa2a0635f00\\out\\minicoro.o"
+exit code: 0
+running: "ar" "s" "C:\\Users\\YC\\Documents\\github\\rusty-ts\\minicoro-sys\\target\\debug\\build\\minicoro-sys-3f599aa2a0635f00\\out\\libminicoro.a"
+exit code: 0
+cargo:rustc-link-lib=static=minicoro
+cargo:rustc-link-search=native=C:\Users\YC\Documents\github\rusty-ts\minicoro-sys\target\debug\build\minicoro-sys-3f599aa2a0635f00\out
