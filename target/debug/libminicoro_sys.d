@@ -1,1 +1,0 @@
-C:\Users\YC\Documents\github\rusty-ts\minicoro-sys\target\debug\libminicoro_sys.rlib: C:\Users\YC\Documents\github\rusty-ts\minicoro-sys\build.rs C:\Users\YC\Documents\github\rusty-ts\minicoro-sys\src\lib.rs
