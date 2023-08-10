@@ -16,4 +16,4 @@ categories = ["api-bindings", "asynchronous", "concurrency", "no-std", "no-std::
 [dependencies]
 
 [build-dependencies]
-cc = "*"
+cc = "1.0"
